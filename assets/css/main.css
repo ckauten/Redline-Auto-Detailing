@@ -104,7 +104,6 @@ h4 {
 
 a {
   color: #006376;
-  text-decoration: underline;
 }
 
 a:hover {
@@ -1687,6 +1686,7 @@ header > p {
 .image img {
   display: block;
   width: 100%;
+  height: 25em;
   border-radius: 8px;
 }
 
@@ -1920,6 +1920,9 @@ ul.contact li:hover a.fa-envelope {
 
 ul.contact li:hover a.fa-instagram {
   background-color: #cd486b;
+}
+ul.contact li:hover a.fa-envelope {
+  background-color: darkblue;
 }
 
 ul.contact li:active {
@@ -2194,6 +2197,12 @@ table.default thead {
 .box.page-content ul.meta {
   margin: 0 0 0.5em 0;
 }
+
+/* Services tabs */
+/* .right {
+  display: flex;
+  justify-content: flex-end;
+} */
 
 /* Icons */
 
@@ -2530,25 +2539,10 @@ body {
 
 #copyright {
   display: inline-block;
-  background: #e7eae8;
-  padding: 0.75em 2em 0.75em 2em;
-  border-radius: 8px;
-  color: #8b9790;
-  margin: 4em 0 0 0;
-}
-
-#copyright a {
-  color: inherit;
-}
-
-#copyright .menu {
-  margin: 0;
-}
-
-#copyright .menu li {
-  border-color: #606b64;
-  border-width: 2px;
-  line-height: 1em;
+  font-size: 0.5em;
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5em 2em 0.75em 2em;
 }
 
 /* Contact Form Styling */
@@ -3105,11 +3099,12 @@ textarea {
 
   /* Copyright */
 
-  #copyright .menu li {
-    display: block;
-    border-left: 0;
-    padding-left: 0;
-    line-height: 1.75em;
+  #copyright {
+    display: inline-block;
+    font-size: 0.5em;
+    text-decoration: none;
+    list-style: none;
+    padding: 0.5em 2em 0.75em 2em;
   }
 }
 
