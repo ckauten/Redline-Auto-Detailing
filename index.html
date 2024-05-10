@@ -43,7 +43,7 @@
         <div class="content">
           <h2>Welcome to Redline Auto Detailing</h2>
           <p>Redmond's #1 choice in automotive detailing</p>
-          <a href="#main" class="button scrolly">Request a Quote</a>
+          <a href="#fs-frm" class="button scrolly">Request a Quote</a>
         </div>
       </section>
 
@@ -83,7 +83,7 @@
             <div class="col-12">
               <!-- Features -->
               <section class="box features">
-                <h2 class="major"><span>A Major Heading</span></h2>
+                <h2 class="major"><span class="darken">A Major Heading</span></h2>
                 <div>
                   <div class="row">
                     <div class="col-3 col-6-medium col-12-small">
@@ -132,7 +132,7 @@
                     </div>
                     <div class="col-12">
                       <ul class="actions">
-                        <li><a href="#" class="button large">Do Something</a></li>
+                        <li><a href="#" class="button alt large">Do Something</a></li>
                         <li><a href="#" class="button alt large">Think About It</a></li>
                       </ul>
                     </div>
@@ -143,7 +143,7 @@
             <div class="col-12">
               <!-- Blog -->
               <section class="box blog">
-                <h2 class="major"><span>Another Major Heading</span></h2>
+                <h2 class="major"><span class="darken">Another Major Heading</span></h2>
                 <div>
                   <div class="row">
                     <div class="col-9 col-12-medium">
@@ -165,7 +165,7 @@
                             Curabitur sed nisi nunc, accumsan vestibulum lectus. Lorem ipsum dolor sit non aliquet sed,
                             tempor et dolor. Praesent a dapibus velit. Curabitur accumsan.
                           </p>
-                          <a href="#" class="button">Continue Reading</a>
+                          <a href="#" class="button alt">Continue Reading</a>
                         </article>
                       </div>
                     </div>
@@ -237,14 +237,71 @@
             <div class="col-12">
               <!-- About -->
               <section>
-                <h2 class="major"><span>What's this about?</span></h2>
+                <h2 class="major"><span class="darken">What's this about?</span></h2>
                 <p>we dont know what we're about yet</p>
               </section>
             </div>
             <div class="col-12">
               <!-- Contact -->
               <section>
-                <h2 class="major"><span>Get in touch</span></h2>
+                <h2 class="major"><span class="darken">Get in touch</span></h2>
+                <form
+                  id="fs-frm"
+                  name="simple-contact-form"
+                  accept-charset="utf-8"
+                  action="https://formspree.io/f/xbjnqvrr"
+                  method="post">
+                  <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input
+                      class="contact-form-fields"
+                      type="text"
+                      name="name"
+                      id="full-name"
+                      placeholder="First and Last"
+                      required="" />
+
+                    <label for="telephone">Telephone Number</label>
+                    <input
+                      class="contact-form-fields"
+                      type="telephone"
+                      name="telephone"
+                      id="telephone"
+                      placeholder="(555) 555-5555"
+                      required="" />
+
+                    <label for="email-address">Email Address</label>
+                    <input
+                      class="contact-form-fields"
+                      type="email"
+                      name="_replyto"
+                      id="email-address"
+                      placeholder="email@domain.tld"
+                      required="" />
+
+                    <label for="email-address">Vehicle Make and Model</label>
+                    <input
+                      class="contact-form-fields"
+                      type="text"
+                      name="vehicle-make-and-model"
+                      id="text"
+                      placeholder="2015 Subaru WRX Sti"
+                      required="" />
+
+                    <label for="message">Message</label>
+                    <textarea
+                      class="contact-form-fields"
+                      rows="5"
+                      name="message"
+                      id="message"
+                      placeholder="Let me know how I can help you!"
+                      required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission" />
+                  </fieldset>
+                  <input type="submit" value="Submit" />
+                </form>
+
+                <!-- Social Links -->
                 <ul class="contact">
                   <li>
                     <a class="icon brands fa-facebook" href="#"><span class="label">Facebook</span></a>
