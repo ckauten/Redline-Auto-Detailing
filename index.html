@@ -25,17 +25,15 @@
           <li class="current"><a href="index.html">Home</a></li>
           <li>
             <a href="services.html">Services</a>
-          </li>
             <ul>
-              <li><a href="#">Exterior Detailing</a></li>
-              <li><a href="#">Interior Detailing</a></li>
-              <li><a href="#">Paint Correction</a></li>
-              <li><a href="#">Ceramic Coating</a></li>
+              <li><a class="scrolly" href="services.html#exterior">Exterior Detailing</a></li>
+              <li><a class="scrolly" href="services.html#interior">Interior Detailing</a></li>
+              <li><a class="scrolly" href="services.html#paint-correction">Paint Correction</a></li>
+              <li><a class="scrolly" href="services.html#ceramic-coating">Ceramic Coating</a></li>
             </ul>
           </li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="no-sidebar.html">No Sidebar</a></li>
         </ul>
       </nav>
 
@@ -44,7 +42,7 @@
         <div class="content">
           <h2>Welcome to Redline Auto Detailing</h2>
           <p>Redmond's #1 choice in automotive detailing</p>
-          <a href="#fs-frm" class="button scrolly">Request a Quote</a>
+          <a href="#GIT" class="button scrolly">Request a Quote</a>
         </div>
       </section>
 
@@ -57,16 +55,22 @@
               <section class="box highlight">
                 <ul class="special">
                   <li>
-                    <a href="#" class="icon solid fa-car"><span class="label">Exterior</span></a>
+                    <a href="services.html#exterior" class="icon solid fa-car"><span class="label">Exterior</span></a>
                   </li>
                   <li>
-                    <a href="#" class="icon solid fa-broom"><span class="label">Interior Detailing</span></a>
+                    <a href="services.html#interior" class="icon solid fa-broom"
+                      ><span class="label">Interior Detailing</span></a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="icon solid fa-palette"><span class="label">Paint Correction</span></a>
+                    <a href="services.html#paint-correction" class="icon solid fa-palette"
+                      ><span class="label">Paint Correction</span></a
+                    >
                   </li>
                   <li>
-                    <a href="#" class="icon solid fa-shield-halved"><span class="label">Ceramic Coating</span></a>
+                    <a href="services.html#ceramic-coating" class="icon solid fa-shield-halved"
+                      ><span class="label">Ceramic Coating</span></a
+                    >
                   </li>
                 </ul>
                 <header>
@@ -154,7 +158,6 @@
                           <header>
                             <h3><a href="#">Here's a really big heading</a></h3>
                             <p>With a smaller subtitle that attempts to elaborate</p>
-                            
                           </header>
                           <a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
                           <p>
@@ -174,31 +177,26 @@
                           <li>
                             <article class="box post-summary">
                               <h3><a href="#">A Subheading</a></h3>
-                              
                             </article>
                           </li>
                           <li>
                             <article class="box post-summary">
                               <h3><a href="#">Another Subheading</a></h3>
-                              
                             </article>
                           </li>
                           <li>
                             <article class="box post-summary">
                               <h3><a href="#">And Another</a></h3>
-                              
                             </article>
                           </li>
                           <li>
                             <article class="box post-summary">
                               <h3><a href="#">And Another</a></h3>
-                              
                             </article>
                           </li>
                           <li>
                             <article class="box post-summary">
                               <h3><a href="#">And One More</a></h3>
-                            
                             </article>
                           </li>
                         </ul>
@@ -227,7 +225,7 @@
             <div class="col-12">
               <!-- Contact -->
               <section>
-                <h2 class="major"><span class="darken">Get in touch</span></h2>
+                <h2 class="major"><span class="darken" id="GIT">Get in touch</span></h2>
                 <form
                   id="fs-frm"
                   name="simple-contact-form"
@@ -268,7 +266,7 @@
                       type="text"
                       name="vehicle-make-and-model"
                       id="text"
-                      placeholder="2015 Subaru WRX Sti"
+                      placeholder="2015 Subaru WRX STI"
                       required="" />
 
                     <label for="message">Message</label>

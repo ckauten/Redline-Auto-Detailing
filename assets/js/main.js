@@ -4,71 +4,81 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-(function($) {
+(function ($) {
+  var $window = $(window),
+    $body = $('body'),
+    $nav = $('#nav');
 
-	var	$window = $(window),
-		$body = $('body'),
-		$nav = $('#nav');
+  // Breakpoints.
+  breakpoints({
+    xlarge: ['1281px', '1680px'],
+    large: ['981px', '1280px'],
+    medium: ['737px', '980px'],
+    small: ['361px', '736px'],
+    xsmall: [null, '360px'],
+  });
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:  [ '1281px',  '1680px' ],
-			large:   [ '981px',   '1280px' ],
-			medium:  [ '737px',   '980px'  ],
-			small:   [ '361px',   '736px'  ],
-			xsmall:  [ null,      '360px'  ]
-		});
+  // Play initial animations on page load.
+  $window.on('load', function () {
+    window.setTimeout(function () {
+      $body.removeClass('is-preload');
+    }, 100);
+  });
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+  // Dropdowns.
+  $('#nav > ul').dropotron({
+    mode: 'fade',
+    noOpenerFade: true,
+    speed: 300,
+    alignment: 'center',
+  });
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			mode: 'fade',
-			noOpenerFade: true,
-			speed: 300,
-			alignment: 'center'
-		});
+  // Scrolly
+  $('.scrolly').scrolly({
+    speed: 1000,
+    offset: function () {
+      return $nav.height() + 15;
+    },
+  });
 
-	// Scrolly
-		$('.scrolly').scrolly({
-			speed: 1000,
-			offset: function() { return $nav.height() - 5; }
-		});
+  //   Scrolly function if coming from another page
+  $(document).ready(function () {
+    if (window.location.hash) {
+      var $target = $(window.location.hash);
+      if ($target.length) {
+        $('html, body').animate(
+          {
+            scrollTop: $target.offset().top - ($nav.height() + 15),
+          },
+          1000
+        );
+      }
+    }
+  });
 
-	// Nav.
+  // Nav.
 
-		// Title Bar.
-			$(
-				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
-				'</div>'
-			)
-				.appendTo($body);
+  // Title Bar.
+  $(
+    '<div id="titleBar">' +
+      '<a href="#navPanel" class="toggle"></a>' +
+      '<span class="title">' +
+      $('#logo').html() +
+      '</span>' +
+      '</div>'
+  ).appendTo($body);
 
-		// Panel.
-			$(
-				'<div id="navPanel">' +
-					'<nav>' +
-						$('#nav').navList() +
-					'</nav>' +
-				'</div>'
-			)
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $body,
-					visibleClass: 'navPanel-visible'
-				});
-
+  // Panel.
+  $('<div id="navPanel">' + '<nav>' + $('#nav').navList() + '</nav>' + '</div>')
+    .appendTo($body)
+    .panel({
+      delay: 500,
+      hideOnClick: true,
+      hideOnSwipe: true,
+      resetScroll: true,
+      resetForms: true,
+      side: 'left',
+      target: $body,
+      visibleClass: 'navPanel-visible',
+    });
 })(jQuery);
