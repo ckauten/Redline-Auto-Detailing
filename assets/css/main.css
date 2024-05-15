@@ -2205,7 +2205,14 @@ table.default thead {
 } */
 
 /* Icons */
-
+.fa-broom,
+.fa-car,
+.fa-shield-halved,
+.fa-palette {
+  color: white;
+  font-size: 5em;
+  margin-bottom: 1em;
+}
 .icon {
   text-decoration: none;
   position: relative;
