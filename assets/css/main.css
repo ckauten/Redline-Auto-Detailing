@@ -68,7 +68,7 @@ h4 a,
 h5 a,
 h6 a {
   text-decoration: none;
-  color: rgb(177, 177, 177);
+  color: rgb(211, 211, 211);
   font-family: 'Kanit';
 }
 h1 a {
@@ -224,6 +224,20 @@ header > p {
   flex-wrap: wrap;
   box-sizing: border-box;
   align-items: stretch;
+}
+.row-pricing {
+  display: flex;
+
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 75em;
+}
+.box-features-pricing {
+  display: flex;
+  justify-content: center;
+}
+
+.package-p {
 }
 
 .row > * {
@@ -2443,12 +2457,11 @@ body {
   /* background-image: url('images/overlay.png'), url('images/overlay.png'), url('../../images/banner.jpg'); */
   background: rgb(139, 0, 0);
   background: linear-gradient(0deg, rgba(139, 0, 0, 1) 0%, rgba(23, 23, 23, 1) 100%);
-
   background-position: top left;
   background-repeat: repeat, repeat, no-repeat;
   background-size: auto, auto, cover;
   z-index: 1;
-  padding: 11em 0;
+  /* padding: 11em 0; */
 }
 
 #banner .content {
@@ -2471,11 +2484,7 @@ body {
 
 #banner .content p {
   display: block;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #575d59;
-  font-size: 1.35em;
+  color: rgb(177, 177, 177);
   margin: 0 0 1.25em 0;
 }
 
@@ -2506,10 +2515,10 @@ body {
 #main {
   background: rgb(23, 23, 23);
   border-top: solid 5px #606b64;
-  border-bottom: solid 5px #606b64;
+
   border-top-width: 35px;
-  border-bottom-width: 10px;
-  padding: 6em 0 6em 0;
+
+  padding: 6em 0 0 0;
 }
 
 /* Sidebar + Content */
@@ -2676,7 +2685,7 @@ textarea {
   /* Banner */
 
   #banner {
-    padding: 6em 0;
+    /* padding: 6em 0; */
   }
 
   #banner .content {
@@ -2735,7 +2744,7 @@ textarea {
   /* Banner */
 
   #banner {
-    padding: calc(14em + 44px) 0 14em 0;
+    /* padding: calc(14em + 44px) 0 14em 0; */
   }
 
   /* Nav */
