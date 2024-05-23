@@ -2626,7 +2626,47 @@ textarea {
 .darken {
   color: rgb(61, 61, 61);
 }
-/* XLarge */
+.gallery {
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  width: auto;
+}
+#galleryContainer {
+  height: 60em;
+  /* border: thin solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.left,
+.mid,
+.right {
+  /* border: solid thin white; */
+  display: flex;
+  flex-direction: column;
+}
+
+.tall {
+  height: 40em;
+  width: 50em;
+  /* border: solid thin white; */
+  background-size: contain;
+  background-position: con;
+  overflow: hidden;
+  z-index: -1;
+}
+.short {
+  height: 20em;
+  width: 50em;
+  /* border: solid thin white; */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  z-index: -1;
+}
 
 @media screen and (max-width: 1680px) {
   /* Basic */
