@@ -2845,6 +2845,9 @@ input:checked + .slide-container .nav label {
 /* Large */
 
 @media screen and (max-width: 1280px) {
+  #carouselContainer {
+    display: none;
+  }
   /* Basic */
 
   body,
