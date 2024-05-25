@@ -2848,6 +2848,12 @@ input:checked + .slide-container .nav label {
   #carouselContainer {
     display: none;
   }
+  .banner-main {
+    display: none;
+  }
+  .row {
+    margin-top: 2em;
+  }
   /* Basic */
 
   body,
