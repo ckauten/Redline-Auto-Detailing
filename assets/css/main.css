@@ -2644,6 +2644,10 @@ textarea {
   background-size: cover;
   height: auto;
   width: auto;
+  cursor: pointer;
+}
+.gallery:hover {
+  transform: scale(1.1);
 }
 #galleryContainer {
   display: flex;
@@ -2696,6 +2700,9 @@ textarea {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+.gallery-item.expanded img:hover {
+  transform: scale(1);
 }
 .overlay {
   visibility: hidden;
