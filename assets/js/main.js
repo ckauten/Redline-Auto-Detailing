@@ -1,8 +1,36 @@
-/*
-	TXT by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+// Gallery expansion logic
+// function expand(element) {
+//   if (element.classList.contains('expanded')) {
+//     element.classList.remove('expanded');
+//     document.querySelector('.gallery-item').style.height = '25em';
+//     document.querySelector('.gallery-item').style.width = '25em';
+//   } else {
+//     element.classList.add('expanded');
+//     document.querySelector('.gallery-item').style.height = 'auto';
+//     document.querySelector('.gallery-item').style.width = 'auto';
+//   }
+//   if (window.innerWidth <= 980) {
+//     element.scrollIntoView({ block: 'start', behavior: 'smooth' });
+//   } else {
+//     element.scrollIntoView({ block: 'center' });
+//   }
+// }
+
+function expand(img) {
+  let parentDiv = img.parentElement;
+  parentDiv.classList.toggle('expanded');
+  let overlay = document.querySelector('.overlay');
+  if (parentDiv.classList.contains('expanded')) {
+    overlay.style.visibility = 'visible';
+  } else {
+    overlay.style.visibility = 'hidden';
+  }
+  if (window.innerWidth <= 980) {
+    parentDiv.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  } else {
+    parentDiv.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+}
 
 (function ($) {
   var $window = $(window),
