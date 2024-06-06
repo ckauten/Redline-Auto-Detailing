@@ -2646,42 +2646,25 @@ textarea {
   width: auto;
 }
 #galleryContainer {
-  height: 60em;
-  /* border: thin solid white; */
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-
-.left,
-.mid,
-.right {
-  /* border: solid thin white; */
-  display: flex;
-  flex-direction: column;
-}
-
-.tall {
-  height: 40em;
-  width: 50em;
-  /* border: solid thin white; */
-  background-size: contain;
-  background-position: con;
   overflow: hidden;
-  z-index: -1;
+  border: solid thick white;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  flex-wrap: wrap;
 }
-.short {
-  height: 20em;
-  width: 50em;
-  /* border: solid thin white; */
-  background-size: cover;
+
+.gallery-item {
+  width: 25em;
+  height: 25em;
+  overflow: hidden;
   background-position: center;
-  overflow: hidden;
-  z-index: -1;
+  background-size: cover;
+  margin: 1em;
 }
 
-/* carosel styling */
 #carouselContainer {
   display: flex;
   justify-content: center;
