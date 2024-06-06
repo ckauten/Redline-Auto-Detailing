@@ -2233,6 +2233,9 @@ table.default thead {
   position: relative;
   text-decoration: none;
 }
+.icon:hover {
+  font-size: 5.5em;
+}
 
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
